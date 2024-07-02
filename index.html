@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satvik Rajput - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Satvik's Portfolio</div>
+        <div class="right">
+          <ul class="onNavBar">
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+            <li class="menu-btn" onclick="showSideBar()">
+              <a
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  viewBox="0 -960 960 960"
+                  width="30"
+                  fill="#ffee00"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidebar">
+            <li onclick="hideSideBar()">
+              <a
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  viewBox="0 -960 960 960"
+                  width="30px"
+                  fill="#ffee00"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id = "about" class="firstSection">
+        <div class="leftSection">
+          <p>Greetings, I'm <span class="name">Satvik Rajput</span>👋.<br /></p>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightSection">
+          <img src="./programmer.png" alt="programmer image" />
+        </div>
+      </section>
+
+      <section id = "skills" class="secondSection">
+        <h1 class="topicHead">Skills</h1>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/C.png" alt="C"></div>
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/C++.png"  alt="C++"></div> 
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/Python.png"  alt="Python"></div>
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/HTML.png" alt="HTML"></div>
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/CSS.png"  alt="CSS"></div> 
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/JS.png" alt="JS"></div>
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/Git.png" alt=""></div>
+          </div>
+          <div class="skill">
+            <div class="skill-inner"><img src="./SKILLSICONS/Github.png" alt=""></div>
+          </div>       
+         </div>
+      </section>
+
+      <section id = "projects" class="thirdSection">
+        <h1 class="topicHead">Projects</h1>
+
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <h2 class="project-head">Rainfall Detection using Random Forest Classifier</h2>
+            
+            <div class="project-desc">Developed a model to predict rainfall using the Australia dataset, employing various machine learning algorithms to meticulously analyze and predict intricate rainfall patterns with high accuracy.
+            </div>
+          </div>
+          <div class="project-container project-card">
+            <h2 class="project-head">Fruit and Vegetable Detection using Neural Networks</h2>
+            <div class="project-desc">Collaborated on a project to develop a detection system using neural networks. Assisted in data collection and preprocessing. Contributed to the implementation phase under the guidance of seniors.
+            </div>
+          </div>
+          <div class="project-container project-card">
+            <h2 class="project-head">Face Detection using Haarcascade Classifier in OpenCV</h2>
+            <div class="project-desc">Worked on a face detection project using the Haarcascade classifier in OpenCV. Assisted in the implementation and testing phases. Enhanced understanding of image processing techniques and machine learning algorithms 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id = "contact" class="fourthSection">
+        <h1 class="topicHead">Get In Touch</h1>
+          <div class="form-card2">
+            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="f0dabe37-10db-48b2-810b-f682f06b661b">
+              <div class="form-field">
+                <input required placeholder="Name" class="input-field" name="name" type="text" />
+              </div>
+        
+              <div class="form-field">
+                <input
+                  required
+                  placeholder="Email"
+                  class="input-field"
+                  type="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-field">
+                <textarea
+                  required
+                  placeholder="Message"
+                  cols="30"
+                  rows="3"
+                  name="message"
+                  class="input-field"
+                ></textarea>
+              </div>
+        
+              <button class="sendMessage-btn">Submit ➡</button>
+            </form>
+          </div>
+      </section>
+      <section id="mysocials">
+        <div class="socials">
+          <a href="https://x.com/Satvik76709932" target="_blank"
+            ><img
+              src="./SOCIALICONS/X.png"
+              alt="Twitter"
+              loading="lazy"
+              class="socicon"
+              /></a>
+            <a href="https://github.com/SatvikR123" target="_blank"
+                ><img src="./SKILLSICONS/Github.png" alt="Github" class="socicon"
+            /></a>
+          <a href="https://www.linkedin.com/in/satvik-rajput-a48317293/" target="_blank"
+            ><img
+              src="./SOCIALICONS/Linkedin.png"
+              alt="Linkedin"
+              loading="lazy"
+              class="socicon"
+          /></a>
+      </section>
+      <button id="goBackToTop"><img src="./arrowIcon.png" alt="" width="40px" height="40"></button> 
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "I'm, a B.Tech CSE student at Bharati Vidyapeeth's College of Engineering, New Delhi. I love learning new technologies and am proficient in C, C++, and Python. I enjoy web development, machine learning projects, and improving my problem-solving skills with Data Structures and Algorithms. Thank you for visiting my portfolio!😀",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
